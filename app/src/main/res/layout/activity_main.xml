@@ -6,18 +6,16 @@
     android:orientation="vertical"
 
     tools:context="com.example.altysh.justjava.MainActivity">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="quntiy"
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="+"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="32dp"/>
 
-
-
+        android:layout_marginLeft="32dp"
+        android:onClick="increment"/>
     <TextView
         android:id="@+id/quantity_text_view"
         android:layout_width="wrap_content"
@@ -31,6 +29,30 @@
         android:text="0"
         android:textColor="#000000"
         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+    <Button
+        android:id="@+id/munis"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="-"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+
+        android:layout_marginLeft="32dp"
+        android:onClick="decrement"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="quntiy"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="32dp"/>
+
+
+
+
     <TextView
     android:id="@+id/textView2"
     android:layout_width="wrap_content"

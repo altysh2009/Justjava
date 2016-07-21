@@ -10,8 +10,9 @@ import java.text.NumberFormat;
 /**
  * This app displays an order form to order coffee.
  */
-public class MainActivity extends ActionBarActivity {
 
+public class MainActivity extends ActionBarActivity {
+    int a=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,8 +23,21 @@ public class MainActivity extends ActionBarActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        display(1);
-        displayPrice(2);
+        int numberOfCoffees=a;
+        display(numberOfCoffees);
+        displayPrice(numberOfCoffees*5);
+    }
+    public void increment(View view) {
+        int numberOfCoffees=1;
+        a+=numberOfCoffees;
+        display(a);
+        displayPrice(a*5);
+    }
+    public void decrement(View view) {
+        int numberOfCoffees=1;
+        a-=numberOfCoffees;
+        display(a);
+        displayPrice(a*5);
     }
 
     /**
